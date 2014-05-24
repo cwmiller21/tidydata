@@ -95,6 +95,9 @@ tidyset$Activity <- with(tidyset, factor(Activity, labels=ldf1[[1]]$V2))
 # write the tidyset as a csv file
 write.csv(tidyset, "tidyset.csv", row.names=FALSE)
 
+# write the tidyset as a txt file
+write.table(tidyset, "tidyset.txt", sep = "\t", row.names=FALSE)
+
 
 
 ########################################################################
